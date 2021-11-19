@@ -1,0 +1,99 @@
+body{
+    margin:0;
+    padding:0;
+    list-style: none;
+    outline: 0;
+    background:#0633f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    min-height: 100vh;
+
+}
+/* img{
+    height:330px;
+    width:330px;
+} */
+.form{
+    background: black;
+    width: 23%;
+    height: 520px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px 3px cyan;
+    transition:1s;
+    border-radius:2px;
+    transform: translateX(100px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avater{
+    position: relative;
+    width:190px;
+    height:190px;
+    border-radius:50% ;
+    margin: 1% auto;
+    overflow: hidden;
+}
+.avater img{
+    width:200px;
+    height:200px;
+    border-radius:50% ;
+    position:absolute;
+    top:-5px;
+    left:-5px;
+    transition: 0.56s;
+    filter:blur(0.6px);
+
+}
+
+.field{
+  width: 80%;
+  margin: 0 auto;
+  transition: 5s; 
+}
+
+.field label{
+   color: white;
+   text-transform: capitalize;
+   font-size: 20px;
+}
+.field input[type="text"],.field input[type="password"]{
+    display: block;
+    background: #F3FAFD;
+    height:29px;
+    width:100%;
+    border: 2px solid #A9DDF3;
+    border-radius:2px;
+    padding:5px;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-top: 4%;
+    transition:1s;
+
+}
+.field input[type="submit"]{
+    display: block;
+    background: cyan;
+    height:29px;
+    width:107%;
+    border: none;
+    border-radius:2px;
+    padding:5px;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-top: 1%;
+    box-shadow: 0 2px 5px beige;
+    font-weight: 900;
+    color: currentColor;
+    text-align: center;
+    cursor: pointer;
+    transition:1s;
+    border-radius: 2px;
+}
+.field input[type="submit"]:hover{
+    background: black;
+    color:white;
+    box-shadow: 0 2px 5px white;
+}
