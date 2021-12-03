@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100";
 body{
     margin:0;
     padding:0;
@@ -11,10 +12,26 @@ body{
     min-height: 100vh;
 
 }
-/* img{
-    height:330px;
-    width:330px;
-} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: "Lato" ,Arial, Helvetica, sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+    background-size: 400% 400%;
+    position:relative;
+    animation: change 10s ease-in-out infinite;
+}
+
 .form{
     background: black;
     width: 23%;
@@ -26,6 +43,8 @@ body{
     border-radius:2px;
     transform: translateX(100px);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 100px;
+    margin-left:450px;
 }
 
 .avater{
@@ -59,11 +78,11 @@ body{
    text-transform: capitalize;
    font-size: 20px;
 }
-.field input[type="text"],.field input[type="password"]{
+.field input[type="email"],.field input[type="password"]{
     display: block;
     background: #F3FAFD;
-    height:29px;
-    width:100%;
+    height:40px;
+    width:270px;
     border: 2px solid #A9DDF3;
     border-radius:2px;
     padding:5px;
@@ -96,4 +115,15 @@ body{
     background: black;
     color:white;
     box-shadow: 0 2px 5px white;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position:100% 50% ;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
